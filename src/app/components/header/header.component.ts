@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -7,23 +7,20 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    '(window:scroll)': 'onScroll()',
     style: 'display: contents',
   },
   template: `
-    <header id="header" [style.background-position]="bgPosition()">
+    <header id="header">
       <div class="inner">
-        <img ngSrc="assets/images/aliance_logo-cropped.svg" alt="Aliance žen s rakovinou prsu" width="150" height="150" priority />
-        <h1><strong>Aliance žen</strong><br />
-        s rakovinou prsu<br />
-        Lorem ipsum dolor sit amet.</h1>
+        <img ngSrc="assets/images/intro.png" alt="Vzpěračky Masters pro Alianci žen s rakovinou prsu" width="1222" height="826" priority class="header-image" />
       </div>
       <div class="desktop-footer">
         <div class="inner">
           <ul class="icons">
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon solid fa-envelope"><span class="label">E-mail</span></a></li>
+            <li><a href="https://www.breastcancer.cz/" class="icon solid fa-globe"><span class="label">Web</span></a></li>
+            <li><a href="https://www.facebook.com/AlianceZenSRakovinouPrsuOps" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/aliancezen/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="mailto:aliance@breastcancer.cz" class="icon solid fa-envelope"><span class="label">E-mail</span></a></li>
           </ul>
           <ul class="copyright">
             <li>&copy; Aliance žen s rakovinou prsu</li>
@@ -34,11 +31,4 @@ import { NgOptimizedImage } from '@angular/common';
     </header>
   `,
 })
-export class HeaderComponent {
-  readonly bgPosition = signal('left 0px');
-
-  onScroll(): void {
-    const scrollY = window.scrollY;
-    this.bgPosition.set(`left ${-1 * (scrollY / 20)}px`);
-  }
-}
+export class HeaderComponent {}

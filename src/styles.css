@@ -9,11 +9,11 @@
 }
 
 .desktop-footer .icons a {
-  color: #787878;
+  color: #f0c8db;
 }
 
 .desktop-footer .copyright {
-  color: #787878;
+  color: #f0c8db;
   font-size: 0.8em;
   list-style: none;
   margin: 1em 0 0 0;
@@ -38,6 +38,18 @@
   color: inherit;
 }
 
+/* Header intro image */
+#header > .inner {
+  margin: 0 -4em;
+  width: auto;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Desktop: show sidebar footer, hide mobile footer */
 .mobile-footer {
   display: none;
@@ -45,11 +57,27 @@
 
 /* Mobile (<=980px): hide sidebar footer, show mobile footer */
 @media screen and (max-width: 980px) {
+  #header > .inner {
+    margin: -6em -4em;
+  }
+
   .desktop-footer {
     display: none;
   }
 
   .mobile-footer {
     display: block;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header > .inner {
+    margin: -2.25em -1.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header > .inner {
+    margin: -4.5em -1.5em;
   }
 }

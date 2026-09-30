@@ -2591,12 +2591,12 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #ffffff;
+		background-color: #bd3f84;
 		background-attachment: scroll;
-		background-image: url("../images/bg.jpg");
-		background-position: top left;
+		background-image: none;
+		background-position: center center;
 		background-repeat: no-repeat;
-		background-size: 150%;
+		background-size: cover;
 		color: #787878;
 		height: 100%;
 		left: 0;
