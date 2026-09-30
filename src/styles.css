@@ -1,0 +1,55 @@
+/*
+ * Desktop footer (inside #header sidebar) mirrors #footer styles.
+ * Mobile footer (#footer after #main) uses existing main.css rules.
+ */
+
+/* Desktop footer: style like original #footer inside the sidebar */
+.desktop-footer .icons {
+  margin: 1em 0 0 0;
+}
+
+.desktop-footer .icons a {
+  color: #787878;
+}
+
+.desktop-footer .copyright {
+  color: #787878;
+  font-size: 0.8em;
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+.desktop-footer .copyright li {
+  border-left: solid 1px rgba(120, 120, 120, 0.4);
+  display: inline-block;
+  line-height: 1em;
+  margin-left: 0.75em;
+  padding-left: 0.75em;
+}
+
+.desktop-footer .copyright li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.desktop-footer .copyright li a {
+  color: inherit;
+}
+
+/* Desktop: show sidebar footer, hide mobile footer */
+.mobile-footer {
+  display: none;
+}
+
+/* Mobile (<=980px): hide sidebar footer, show mobile footer */
+@media screen and (max-width: 980px) {
+  .desktop-footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    display: block;
+  }
+}
