@@ -50,6 +50,24 @@
   display: block;
 }
 
+/* Activity thumbnails */
+.work-item .image {
+  background-color: #ffffff !important;
+}
+
+.work-item .image:before {
+  display: none;
+}
+
+.work-item h3 {
+  text-align: center;
+}
+
+.work-item .image img {
+  max-height: 309.75px;
+  object-fit: contain;
+}
+
 /* Desktop: show sidebar footer, hide mobile footer */
 .mobile-footer {
   display: none;

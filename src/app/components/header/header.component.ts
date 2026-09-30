@@ -12,7 +12,7 @@ import { NgOptimizedImage } from '@angular/common';
   template: `
     <header id="header">
       <div class="inner">
-        <img ngSrc="assets/images/intro.png" alt="Vzpěračky Masters pro Alianci žen s rakovinou prsu" width="1222" height="826" priority class="header-image" />
+        <img ngSrc="assets/images/intro.png" alt="Vzpěračky Masters pro Alianci žen s rakovinou prsu" width="988" height="832" priority class="header-image" />
       </div>
       <div class="desktop-footer">
         <div class="inner">
