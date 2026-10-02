@@ -10,7 +10,7 @@ const ACTIVITIES: Activity[] = [
   { thumbSrc: 'assets/images/thumbs/01.png' },
   { thumbSrc: 'assets/images/thumbs/02.png' },
   { thumbSrc: 'assets/images/thumbs/03.png' },
-  { thumbSrc: 'assets/images/thumbs/qr-code.svg', title: 'Údaje pro platbu' },
+  { thumbSrc: 'assets/images/thumbs/qr-code.jpeg', title: 'Údaje pro platbu' },
 ];
 
 @Component({
