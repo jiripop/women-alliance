@@ -14,7 +14,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           <li><a href="mailto:aliance@breastcancer.cz" class="icon solid fa-envelope"><span class="label">E-mail</span></a></li>
         </ul>
         <ul class="copyright">
-          <li>&copy; Aliance žen s rakovinou prsu</li>
           <li>Design: <a href="http://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
         </ul>
       </div>
