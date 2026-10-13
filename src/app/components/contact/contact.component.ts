@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
   template: `
     <section id="contact">
       <h2>Chci pomoci</h2>
-      <p>Cena kalendáře je 430,- + cena poštovného 89,- Kč, tzn. 519,- Kč celkem. Částku prosím uhraďte pomocí výše uvedeného QR kódu nebo na účet č. 8006566001/5500 a do zprávy pro příjemce napište Kaledář masters. Zároveň prosím vyplňte vaše údaje ve formuláři níže a do zprávy napište vaši adresu, kam kalendář zašlete.</p>
+      <p>Cena kalendáře je 430,- + cena poštovného 89,- Kč, tzn. 519,- Kč celkem. Částku prosím uhraďte pomocí výše uvedeného QR kódu nebo na účet č. 8006566001/5500 a do zprávy pro příjemce napište Kaledář masters. Zároveň prosím vyplňte vaše údaje ve formuláři níže a do zprávy napište vaši adresu, kam si přejete kalendář zaslat.</p>
       <p>Pokud nechcete kalendář, ale chcete podpořit projekty Aliance jakoukoliv částkou, můžete tak učinit také prostřednictvím výše uvedeného QR kódu.</p>
       <div class="row">
         <div class="col-12">
